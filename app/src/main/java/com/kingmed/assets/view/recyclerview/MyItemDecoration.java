@@ -11,7 +11,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.kingmed.assets.KingmeApplication;
+import com.kingmed.assets.KingmedApplication;
 import com.kingmed.assets.util.CommonUtils;
 
 
@@ -26,7 +26,7 @@ public class MyItemDecoration extends RecyclerView.ItemDecoration {
     private int mDividerHeight = 2;//分割线高度，默认为1px
     private int mOrientation;//列表的方向：LinearLayoutManager.VERTICAL或LinearLayoutManager.HORIZONTAL
     private static final int[] ATTRS = new int[]{android.R.attr.listDivider};
-    private int paddingHorizontal = CommonUtils.dpToPxInt(KingmeApplication.getInstance(), 12);
+    private int paddingHorizontal = CommonUtils.dpToPxInt(KingmedApplication.getInstance(), 12);
 
     /**
      * 默认分割线：高度为2px，颜色为灰色

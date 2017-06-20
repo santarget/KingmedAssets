@@ -1,6 +1,7 @@
 package com.kingmed.assets.network.api;
 
-import com.ssy.everything.bean.NewsResponse;
+
+import com.kingmed.assets.bean.UserInfo;
 
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -13,6 +14,6 @@ import rx.Observable;
 public interface NewsApi {
 
     @GET("toutiao/index" )
-    Observable<NewsResponse> getNews(@Query("type") String type, @Query("key") String appKey);
+    Observable<UserInfo> getNews(@Query("type") String type, @Query("key") String appKey);
 
 }

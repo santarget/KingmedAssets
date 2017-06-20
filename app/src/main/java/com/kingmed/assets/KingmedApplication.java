@@ -10,9 +10,9 @@ import com.tencent.bugly.crashreport.CrashReport;
  * Created by ssy on 2017/5/19.
  */
 
-public class KingmeApplication extends Application {
-    private static final String TAG = "KingmeApplication";
-    private static KingmeApplication instance;
+public class KingmedApplication extends Application {
+    private static final String TAG = "KingmedApplication";
+    private static KingmedApplication instance;
     public static boolean hasLogin;
 
     @Override
@@ -24,7 +24,7 @@ public class KingmeApplication extends Application {
         crashHandler.init(getApplicationContext());
     }
 
-    public static KingmeApplication getInstance() {
+    public static KingmedApplication getInstance() {
         return instance;
     }
 }

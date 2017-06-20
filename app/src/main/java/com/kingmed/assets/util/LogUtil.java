@@ -3,7 +3,7 @@ package com.kingmed.assets.util;
 import android.content.Context;
 import android.util.Log;
 
-import com.ssy.everything.common.Config;
+import com.kingmed.assets.common.Config;
 
 import java.io.File;
 import java.io.FileNotFoundException;
