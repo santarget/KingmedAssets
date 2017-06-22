@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import com.kingmed.assets.R;
 import com.kingmed.assets.base.BaseActivity;
+import com.kingmed.assets.util.StatusBarUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,6 +26,7 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        StatusBarUtil.setTransparent(this);
         ButterKnife.bind(this);
         new Handler().postDelayed(new Runnable() {
             @Override

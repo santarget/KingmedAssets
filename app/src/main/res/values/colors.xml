@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="divider_line">#FFCCC9CA</color>
+    <color name="status_bar_color">#FF303F9F</color>
 </resources>

@@ -35,5 +35,4 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.5.0'
     //bugly
     compile 'com.tencent.bugly:crashreport:2.6.0'
-
 }

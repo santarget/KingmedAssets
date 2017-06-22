@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.kingmed.assets.R;
 import com.kingmed.assets.base.BaseActivity;
+import com.kingmed.assets.util.StatusBarUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,6 +32,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        StatusBarUtil.setTransparent(this);
         ButterKnife.bind(this);
     }
 
