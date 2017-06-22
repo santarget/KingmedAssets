@@ -19,22 +19,102 @@
             android:layout_height="match_parent"
             android:divider="@drawable/divider_settings"
             android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
             android:showDividers="middle">
 
             <TextView
+                style="@style/settings_title_txt"
+                android:text="@string/user" />
+
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="ssss" />
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/current_user"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="test"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="ssss" />
+                style="@style/settings_title_txt"
+                android:text="@string/scan_settings" />
 
-            <TextView
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="ssss" />
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="提示音"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPadding="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="振动"
+                        android:textSize="16sp" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>

@@ -19,7 +19,7 @@
             android:layout_column="0"
             android:layout_row="0"
             android:drawableTop="@mipmap/ic_launcher_round"
-            android:text="add" />
+            android:text="@string/add" />
 
         <TextView
             android:id="@+id/tvQuery"
@@ -28,7 +28,7 @@
             android:layout_marginLeft="20dp"
             android:layout_row="0"
             android:drawableTop="@mipmap/ic_launcher_round"
-            android:text="query" />
+            android:text="@string/query" />
 
         <TextView
             android:id="@+id/tvCheck"
@@ -36,7 +36,7 @@
             android:layout_column="0"
             android:layout_row="1"
             android:drawableTop="@mipmap/ic_launcher_round"
-            android:text="check" />
+            android:text="@string/check" />
 
         <TextView
             android:id="@+id/tvSettings"
@@ -45,6 +45,6 @@
             android:layout_marginLeft="20dp"
             android:layout_row="1"
             android:drawableTop="@mipmap/ic_launcher_round"
-            android:text="settings" />
+            android:text="@string/settings" />
     </GridLayout>
 </RelativeLayout>

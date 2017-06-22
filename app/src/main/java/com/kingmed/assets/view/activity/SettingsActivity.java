@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 import com.kingmed.assets.R;
 import com.kingmed.assets.base.BaseActivity;
@@ -26,6 +27,15 @@ public class SettingsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         ButterKnife.bind(this);
+        toolbar.setTitle(R.string.settings);
         setSupportActionBar(toolbar);
+        toolbar.setNavigationIcon(R.mipmap.back_icon);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 }

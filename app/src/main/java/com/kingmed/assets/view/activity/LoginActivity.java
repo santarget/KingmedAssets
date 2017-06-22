@@ -85,7 +85,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
             }
         });
 
-        mLoginFormView = findViewById(R.id.login_form);
+        mLoginFormView = findViewById(R.id.email_login_form);
         mProgressView = findViewById(R.id.login_progress);
     }
 
@@ -117,7 +117,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
 
         // Check for a valid email address.
         if (TextUtils.isEmpty(email)) {
-            mEmailView.setError(getString(R.string.error_field_required));
+            mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
         } else if (!isEmailValid(email)) {
