@@ -38,10 +38,13 @@ public class MainActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tvAdd:
+                startActivity(new Intent(this, AddActivity.class));
                 break;
             case R.id.tvQuery:
+                startActivity(new Intent(this, QueryActivity.class));
                 break;
             case R.id.tvCheck:
+                startActivity(new Intent(this, CheckActivity.class));
                 break;
             case R.id.tvSettings:
                 startActivity(new Intent(this, SettingsActivity.class));

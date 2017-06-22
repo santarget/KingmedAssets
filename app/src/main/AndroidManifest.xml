@@ -28,8 +28,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.LoginActivity" />
-        <activity android:name=".view.activity.MainActivity" />
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:launchMode="singleTask" />
         <activity android:name=".view.activity.SettingsActivity" />
+        <activity android:name=".view.activity.AddActivity" />
+        <activity android:name=".view.activity.QueryActivity" />
+        <activity android:name=".view.activity.CheckActivity" />
     </application>
 
 </manifest>

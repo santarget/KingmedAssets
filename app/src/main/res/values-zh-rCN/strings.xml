@@ -18,4 +18,6 @@
     <string name="user">用户</string>
     <string name="current_user">当前用户</string>
     <string name="scan_settings">扫描设置</string>
+
+    <string name="scan">扫一扫</string>
 </resources>
